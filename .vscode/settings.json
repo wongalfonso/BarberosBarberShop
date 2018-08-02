@@ -1,0 +1,12 @@
+{
+    "editor.wrappingColumn": 0,
+    "files.exclude": {
+        "**/node_modules": {},
+        "typings": {},
+        "**/*.map": {},
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false
+}
