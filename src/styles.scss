@@ -1,0 +1,33 @@
+@import "styles-variables";
+
+
+html, body {
+  height: 100%;
+}
+
+@media (max-width: $md) {
+  .fullPage {
+    height: 100%;
+  }
+  body {
+    background: black !important;
+  }
+
+}
+@media (min-width: $md +1) {
+  .fullPage {
+    height: 100vh;
+  }
+  body {
+    background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
+  }
+}
+
+
+
+
+
+
+
+
+

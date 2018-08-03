@@ -1,0 +1,30 @@
+@import "../../styles-variables";
+
+.carousel-inner {
+  height: 100vh;
+}
+.carousel-inner:after {
+  position:absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
+  z-index: 10;
+}
+.carousel-control-prev, .carousel-control-next {
+  z-index: 20;
+}
+
+@media (max-width: $md) {
+  .carousel-item active {
+    height: 100%;
+  }
+}
+
+@media (min-width: $md +1) {
+
+}

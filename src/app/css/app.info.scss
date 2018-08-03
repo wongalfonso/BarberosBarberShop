@@ -1,0 +1,64 @@
+@import "../../styles-variables";
+
+.infoContainer {
+  height: 100%;
+}
+
+.infoTopRow {
+  height: 20%;
+}
+.infoMiddleRow {
+  height: 60%;
+}
+
+.infoBotRow {
+  height: 20%;
+}
+.table-dark {
+  background-color: black;
+}
+.table tr {
+  color: rgb(194, 193, 193);
+}
+
+#hoursTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hours {
+  color: rgb(194, 193, 193);
+}
+.btnCol {
+  height: 100%;
+  text-align: center;
+}
+
+@media (max-width: $md) {
+  .infoTopRow {
+    margin-top: 3rem;
+  }
+  #barberosHeader {    
+    color: rgb(194, 193, 193);
+    border-bottom: solid 2px rgb(194, 193, 193);
+  }
+  .infoBotRow{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: $md +1) {
+
+  #barberosHeader {
+    top: 100%;
+    transform: translateY(200%);
+    color: rgb(194, 193, 193);
+    border-bottom: solid 2px rgb(194, 193, 193);
+  }
+
+  #apptBtn {    
+    width: 20rem;
+    border-radius: 8px;
+  }
+}
+
