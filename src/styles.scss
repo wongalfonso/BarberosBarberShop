@@ -5,7 +5,7 @@ html, body {
   height: 100%;
 }
 
-@media (max-width: $md) {
+@media screen and (max-width: $md) {
   .fullPage {
     height: 100%;
   }
@@ -14,18 +14,30 @@ html, body {
   }
 
 }
-@media screen and (min-width: $md +1) and (-webkit-min-device-pixel-ratio: 1){
+@media 
+  only screen and (min-width: $md +1) and (-webkit-min-device-pixel-ratio: 1), 
+  only screen and (min--moz-device-pixel-ratio: 1){
   .fullPage {
     height: 100vh;
   }
   body {
     background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
+    background: -moz-linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
   }
 }
 
-@media screen and (min-device-width: $xl) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+
+@media 
+  only screen and (-webkit-min-device-pixel-ratio: 2), 
+  only screen and (min--moz-device-pixel-ratio: 2) {
   .fullPage {
     height: 100%;
+  }
+  body {
+    background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
+    background: -moz-linear-gradient(left,  rgb(10,10,10), black, rgb(20,20,20));
+    -moz-background-color:  black;
+    background-color: -webkit-gradient(linear, left, from(rgb(10, 10, 10)), to(black), to(rgb(20, 20, 20)));
   }
 }
 

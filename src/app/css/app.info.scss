@@ -5,10 +5,10 @@
 }
 
 .table-dark {
-  background-color: black;
+  background-color: rgb(1, 1, 1);
 }
 .table tr {
-  color: rgb(194, 193, 193);
+  color: $infoColor;
 }
 
 #hoursTitle {
@@ -17,28 +17,48 @@
 }
 #locationTitle {
   font-size: 2rem;
-
+  
 }
-.hours {
-  color: rgb(194, 193, 193);
+.hours, #locationTitle {
+  color: $infoColor;
+}
+.infoTable {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .map img {
   width: 100%;
 }
-.btnCol {
-  height: 100%;
-  text-align: center;
-}
+
 .map {
   height: 100%;
 }
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.infoTable {
+  color: $infoColor;
+}
+.infoTable td {
+  min-width: 2rem;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+}
+.infoTable td a {
+  color: $infoColor + 1;
+}
+
 @media (max-width: $md) {
   .infoTopRow {
     margin-top: 3rem;
   }
   #barberosHeader {    
-    color: rgb(194, 193, 193);
-    border-bottom: solid 2px rgb(194, 193, 193);
+    color: $infoColor;
+    border-bottom: solid 2px $infoColor;
   }
   .infoMiddleRow {
     height: 100%;
@@ -55,10 +75,10 @@
   }
 }
 
-@media screen and (min-width: $md +1) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: $md +1) and (-webkit-min-device-pixel-ratio: 1), (min--moz-device-pixel-ratio: 1)   {
   #barberosHeader {
     line-height: 200px;
-    color: rgb(194, 193, 193);    
+    color: $infoColor;    
   }
 
   .infoTopRow {
@@ -89,35 +109,31 @@
   .infoBotRow {
     height: 20%;
   }
+  .btnCol {
+    text-align: center;
+  }
 }
 
-@media screen and (min-device-width: $xl) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media 
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), 
+  only screen and (min--moz-device-pixel-ratio: 2) {
   #barberosHeader {
     line-height: 100px;
-    color: rgb(194, 193, 193);    
-  }
-  
-  .infoTopRow {
-    height: 20%;
-  }
-  .infoMiddleRow {
-    height: 60%;
+    color: $infoColor;    
   }
   .hours {
     position: relative;
   }
-  .table {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;    
-    margin-top: 25%;
+  .hoursTable {
+    position: relative;
+    margin-top: 0%;
   }
   .map img:hover {
     opacity: .8;
   }
 
-  #apptBtn {    
+  #apptBtn {   
+    margin-top: 2rem; 
     width: 20rem;
     border-radius: 8px;
   }
@@ -125,7 +141,6 @@
   .infoBotRow {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    height: 20%;
   }
 }
 

@@ -8,7 +8,7 @@
     <div class="row infoMiddleRow">
       <div class="col-md-4 col-sm-12 text-center hours">
         <span id='hoursTitle'>HOURS</span>
-        <table class = 'table table-dark'>
+        <table class='table table-dark hoursTable'>
           <tr>
             <th scope='row'>Monday</th>
             <td>10am - 7pm</td>
@@ -40,13 +40,35 @@
         </table>
       </div>
       <div class="col-md-8 col-sm-12 text-center map">
-        <span id ='locationTitle'>Location</span>
-        <a href = 'https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target = '_blank'><img src = '../../../public/images/googleMaps.jpg'/></a>
+        <span id='locationTitle'>Location</span>
+        <a href='https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>
+          <img src='../../assets/images/googleMaps.jpg' />
+        </a>
       </div>
     </div>
     <div class="row infoBotRow">
+      <div class="col-12 text-center">
+        <table class='infoTable'>
+          <tr>
+            <td class = 'left'>Address: </td>
+            <td></td>
+            <td class = 'right'><a href = 'https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>2637 University Ave Unit B, San Diego, Ca 92104</a></td>
+          </tr>
+          <tr>
+            <td class = 'left'>Call: </td>
+            <td></td>
+            <td class = 'right'><a href = 'tel:+16193664149'>1 (619) 366-4149</a></td>
+          </tr>
+          <tr>
+            <td class = 'left'>Email: </td>
+            <td></td>
+            <td class = 'right'><a href = 'mailto:Thebarberos619@gmail.com' target = '_blank'>Thebarberos619@gmail.com</a></td>
+          </tr>
+        </table>
+      </div>
+
       <div class="col-12 btnCol">
-        <button id = 'apptBtn' class = 'btn btn-danger form-control form-control-lg'>Schedule an Appointment</button>
+        <button id='apptBtn' class='btn btn-danger form-control form-control-lg'>Schedule an Appointment</button>
       </div>
     </div>
   </div>
